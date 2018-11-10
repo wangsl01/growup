@@ -9,5 +9,8 @@
         <module name="learnNetty" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="learnNetty" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
