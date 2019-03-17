@@ -1,0 +1,7 @@
+
+
+产品等级结构：就是产品的继承关系，如BUS生产线上，有抽象类BYD表示产品的基本类型，然后针对BYD生成子类，如BYDBUS,BYDCar等等。
+在抽象的BYD和具体的BYDBUS,BYDCar因继承关系构成了产品等级结构
+
+产品族：是指由同一工厂生产的，位于不同产品等级结构中的一组产品。BYDCar，BYDBus都是由BYDFactory来创建的，那么BYDCar，BYDBus是同一产品族。
+如再增加电动车产品等级，下一等级为共享电动车和私人电动车，在私人电动车下有BYDautoEleCar，且该产品由BYDFactory来实现 ，那么BYDCar，BYDBus，BYDautoEleCar为同一产品族。
