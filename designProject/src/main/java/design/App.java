@@ -24,13 +24,29 @@ public class App {
 
 
     public static void main(String[] args){
-        t2();
+        t3();
+    }
+
+    public static void t3(){
+        Set<String> set1 = new HashSet<>();
+        set1.add("1");
+        Set<Integer> set2 = new HashSet<>();
+        set2.add(1);
+        set2.add(2);
+        set1.retainAll(set2);
+        System.out.println(set1);
+
     }
 
     public static void t2(){
-        String str ="1.0";
-        Integer t = Integer.parseInt(str);
-        System.out.println(t.intValue());
+//        String str ="1.0";
+//        Integer t = Integer.parseInt(str);
+//        System.out.println(t.intValue());
+
+        List<String> list = new ArrayList(20);
+        System.out.println(list.size());
+
+
     }
 
     public static void t1() throws InterruptedException {
